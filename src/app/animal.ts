@@ -1,9 +1,9 @@
 export class Animal {
-    species;
-    name;
-    dateOfBirth;
+    species:string
+    name:string;
+    dateOfBirth:string;
 
-    constructor(species,name,dateOfBirth)
+    constructor(species:string,name:string,dateOfBirth:string)
     {
         this.species = species;
         this.name = name;
