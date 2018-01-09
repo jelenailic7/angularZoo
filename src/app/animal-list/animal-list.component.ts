@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Animal } from '../animal';
+import { Sector } from '../sector';
+
 
 @Component({
   selector: 'app-animal-list',
@@ -8,6 +10,7 @@ import { Animal } from '../animal';
 })
 export class AnimalListComponent implements OnInit {
 
+  
   newAnimal = {};
   animals: Array<Object>;
   constructor() { 
