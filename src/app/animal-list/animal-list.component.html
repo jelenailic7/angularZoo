@@ -2,8 +2,8 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Type</th>
-      <th>Date of birht</th>
+      <th>Species</th>
+      <th>Date of birth</th>
     </tr>
   </thead>
   <tbody>
@@ -11,9 +11,9 @@
       <a>
       <td>{{ animal.name }}</td>
       </a>
-      <td>{{ animal.type }}</td>
-      <td *ngIf="animal.birth"> {{ animal.birth }}</td>
-      <td *ngIf="!animal.birth">Unknown</td>  
+      <td>{{ animal.species }}</td>
+      <td *ngIf="animal.dateOfBirth"> {{ animal.dateOfBirth }}</td>
+      <td *ngIf="!animal.dateOfBirth">Unknown</td>  
       <td><button (click) = "removeAnimal(animal)" class="btn btn-danger">Remove </button>
       </td>      
     </tr>
