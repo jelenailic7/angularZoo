@@ -8,6 +8,7 @@ import { Animal } from '../animal';
 })
 export class AnimalListComponent implements OnInit {
 
+  newAnimal = {};
   animals: Array<Object>;
   constructor() { 
     this.animals = [
@@ -27,9 +28,11 @@ export class AnimalListComponent implements OnInit {
   moveAnimal(animal)
   {  
     this.removeAnimal(animal);
-
     this.animals.unshift(animal);
-
+  }
+  addAnimal()
+  {
+    this.animals.push(this.newAnimal);
   }
   ngOnInit() {
   }
