@@ -13,7 +13,9 @@
       </a>
       <td>{{ animal.type }}</td>
       <td *ngIf="animal.birth"> {{ animal.birth }}</td>
-      <td *ngIf="!animal.birth">Unknown</td>      
+      <td *ngIf="!animal.birth">Unknown</td>  
+      <td><button (click) = "removeAnimal(animal)" class="btn btn-danger">Remove </button>
+      </td>      
     </tr>
     </tbody>
 </table>

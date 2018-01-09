@@ -37,7 +37,11 @@ export class AnimalListComponent implements OnInit {
       }
     ];  
   }
-
+  removeAnimal(animal)
+  {
+    let index = this.animals.indexOf(animal);
+    this.animals.splice(index,1);
+  }
   ngOnInit() {
   }
 
