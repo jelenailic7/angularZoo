@@ -13,7 +13,7 @@ export class AnimalListComponent implements OnInit {
       {
         name: 'Mike',
         type: 'Dog',
-        birth: '8.8.2010'
+        birth: ''
       },
       {
         name: 'Kitty',

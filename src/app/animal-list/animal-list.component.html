@@ -12,8 +12,8 @@
       <td>{{ animal.name }}</td>
       </a>
       <td>{{ animal.type }}</td>
-      <td>{{ animal.birth }}</td>   
-         
+      <td *ngIf="animal.birth"> {{ animal.birth }}</td>
+      <td *ngIf="!animal.birth">Unknown</td>      
     </tr>
     </tbody>
 </table>
